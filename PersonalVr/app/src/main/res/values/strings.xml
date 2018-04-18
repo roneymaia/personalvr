@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PersonalVr</string>
+    <string name="facebook_app_id">443160939456825</string>
+    <string name="fb_login_protocol_scheme">fb443160939456825</string>
+</resources>

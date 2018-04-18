@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\2df83de2dcb2134e97aaa6618ae437bf\AndroidManifest.xml:2:1-6:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.32.0.aar\5f3a416c3ca04aae994685692b0bdbde\AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-login:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-login-4.32.0.aar\0e61cb98278ed1027c13cdf6626a471d\AndroidManifest.xml:21:1-31:12
@@ -47,25 +47,25 @@ MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\androi
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\c5f6a340885b9e60d8f386cbfef97d64\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\77c2a1df41b8074ad91fabc3495187f7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\7827503d07d801ea12b41aece97e784f\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:3:5-45
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\c04da98c35437e47fbdee893656a39f5\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\c04da98c35437e47fbdee893656a39f5\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\36afc46ed86dee7067bcdf7784114ec0\AndroidManifest.xml:20:5-66
@@ -73,9 +73,9 @@ MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\androi
 MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\137e38c8c93a4f89249bd2c2e0bcdc51\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\137e38c8c93a4f89249bd2c2e0bcdc51\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:7:5-48:19
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:7:5-48:19
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\2df83de2dcb2134e97aaa6618ae437bf\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\2df83de2dcb2134e97aaa6618ae437bf\AndroidManifest.xml:5:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.32.0.aar\5f3a416c3ca04aae994685692b0bdbde\AndroidManifest.xml:28:5-29:19
@@ -135,83 +135,83 @@ MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\User
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\7827503d07d801ea12b41aece97e784f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\7827503d07d801ea12b41aece97e784f\AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:13:9-40
 activity#net.sytes.roneymaia.personalvr.MainActivity
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:15:9-60
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:15:9-60
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:15:19-47
 activity#net.sytes.roneymaia.personalvr.SplashScreenActivity
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:17:9-25:20
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:17:9-25:20
 	android:theme
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:19:13-80
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:19:13-80
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:18:13-49
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:18:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:23:27-74
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:27:9-29:55
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:27:9-29:55
 	android:value
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:29:13-52
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:29:13-52
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:28:13-58
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:28:13-58
 activity#com.facebook.FacebookActivity
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:31:9-34:48
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:31:9-34:48
 MERGED from [com.facebook.android:facebook-common:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-common-4.32.0.aar\0201bb7d4762bda7a5167541b951a096\AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-common-4.32.0.aar\0201bb7d4762bda7a5167541b951a096\AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:34:13-45
 	android:configChanges
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:33:13-96
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:33:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-common-4.32.0.aar\0201bb7d4762bda7a5167541b951a096\AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:32:13-57
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:32:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:35:9-46:20
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:35:9-46:20
 	android:exported
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:37:13-36
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:36:13-58
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:36:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:38:13-45:29
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:38:13-45:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:41:17-76
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:41:17-76
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:41:27-73
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:41:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:42:17-78
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:42:17-78
 	android:name
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:42:27-75
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:42:27-75
 data
-ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:44:17-75
+ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:44:17-75
 	android:scheme
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml:44:23-72
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml:44:23-72
 uses-sdk
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\2df83de2dcb2134e97aaa6618ae437bf\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\2df83de2dcb2134e97aaa6618ae437bf\AndroidManifest.xml:4:5-43
 MERGED from [com.facebook.android:facebook-android-sdk:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.32.0.aar\5f3a416c3ca04aae994685692b0bdbde\AndroidManifest.xml:24:5-26:41
@@ -298,16 +298,16 @@ MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\android-aw4736Z2\.gr
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\77c2a1df41b8074ad91fabc3495187f7\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\7827503d07d801ea12b41aece97e784f\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\7827503d07d801ea12b41aece97e784f\AndroidManifest.xml:4:5-43
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\android-aw4736Z2\AndroidStudioProjects\personalvr\PersonalVr\app\src\main\AndroidManifest.xml
 activity#com.facebook.CustomTabMainActivity
 ADDED from [com.facebook.android:facebook-common:4.32.0] C:\Users\android-aw4736Z2\.gradle\caches\transforms-1\files-1.1\facebook-common-4.32.0.aar\0201bb7d4762bda7a5167541b951a096\AndroidManifest.xml:33:9-71
 	android:name

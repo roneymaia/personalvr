@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\android-aw4736Z2\\AndroidStudioProjects\\PersonalVr\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "outputFile": "C:\\Users\\android-aw4736Z2\\AndroidStudioProjects\\personalvr\\PersonalVr\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
                     "source": "C:\\Users\\android-aw4736Z2\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.32.0.aar\\0201bb7d4762bda7a5167541b951a096\\res\\values-id\\values-id.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\android-aw4736Z2\\AndroidStudioProjects\\PersonalVr\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
+            "outputFile": "C:\\Users\\android-aw4736Z2\\AndroidStudioProjects\\personalvr\\PersonalVr\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bn\\values-bn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\android-aw4736Z2\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.32.0.aar\\0e61cb98278ed1027c13cdf6626a471d\\res\\values-bn\\values-bn.xml",

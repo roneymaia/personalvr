@@ -3380,10 +3380,11 @@ public final class R {
     public static final int unknown=0x7f0700b0;
     public static final int up=0x7f0700b1;
     public static final int useLogo=0x7f0700b2;
-    public static final int wide=0x7f0700b3;
-    public static final int withText=0x7f0700b4;
-    public static final int wrap=0x7f0700b5;
-    public static final int wrap_content=0x7f0700b6;
+    public static final int viewCanvas=0x7f0700b3;
+    public static final int wide=0x7f0700b4;
+    public static final int withText=0x7f0700b5;
+    public static final int wrap=0x7f0700b6;
+    public static final int wrap_content=0x7f0700b7;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;

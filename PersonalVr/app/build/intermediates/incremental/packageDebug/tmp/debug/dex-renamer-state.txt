@@ -1,7 +1,0 @@
-#Sun Apr 15 23:17:11 BRT 2018
-base.0=C\:\\Users\\android-aw4736Z2\\AndroidStudioProjects\\PersonalVr\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=C\:\\Users\\android-aw4736Z2\\AndroidStudioProjects\\PersonalVr\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
