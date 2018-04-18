@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewCanvas = findViewById(R.id.viewCanvas)
-        viewCanvas.bitmapCv = BitmapFactory.decodeResource(resources, R.drawable.googleicon)
+        SingletonControlCanvas.bitmapCv = BitmapFactory.decodeResource(resources, R.drawable.googleicon)
+        viewCanvas = findViewById<CustomViewCanvas>(R.id.viewCanvas) // canvas view customizada
 
         mAuth = FirebaseAuth.getInstance() // obtem a instancia de autenticacao
 
