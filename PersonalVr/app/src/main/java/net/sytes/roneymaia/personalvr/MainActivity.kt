@@ -1,5 +1,6 @@
 package net.sytes.roneymaia.personalvr
 
+import android.animation.ValueAnimator
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
@@ -14,7 +15,9 @@ import com.facebook.FacebookCallback
 import com.facebook.login.widget.LoginButton
 import android.content.Intent
 import android.graphics.BitmapFactory
+import android.util.DisplayMetrics
 import android.widget.Button
+import android.widget.EditText
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.FacebookAuthProvider
 import com.facebook.AccessToken
@@ -35,6 +38,13 @@ class MainActivity : AppCompatActivity() {
     private var googleButton: SignInButton? = null
     private var customGoogleButton: Button? = null
     private var viewCanvas: View? = null
+    private var btnEntrar: Button? = null
+    private var txtEmail: EditText? = null
+    private var txtSenha: EditText? = null
+    private var animation: ValueAnimator? = null
+    private var metricsMain: DisplayMetrics? = null
+    private var viewFrag: View? = null
+    private var btnCadastrar: Button? = null
 
     companion object {
         const val PVR_CODE = 1
@@ -43,6 +53,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        metricsMain = resources.displayMetrics
 
         SingletonControlCanvas.bitmapCv = BitmapFactory.decodeResource(resources, R.drawable.googleicon)
         viewCanvas = findViewById<CustomViewCanvas>(R.id.viewCanvas) // canvas view customizada
@@ -105,6 +117,35 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        txtEmail = findViewById<View>(R.id.txtEmail) as EditText
+        txtSenha = findViewById<View>(R.id.txtSenha) as EditText
+
+        // Evento de click no botão de entrar
+        btnEntrar = findViewById<View>(R.id.btnEntrar) as Button
+        btnEntrar!!.setOnClickListener { _ ->
+            val email = this@MainActivity.txtEmail!!.text!!.toString()
+            val senha = this@MainActivity.txtSenha!!.text!!.toString()
+
+            if(!(isNullOrEmpty(email) || isNullOrEmpty(senha))){
+                signInEmailAndPassword(email, senha)
+            }
+
+        }
+
+        btnCadastrar = findViewById<View>(R.id.buttonCadastrar) as Button
+        btnCadastrar!!.setOnClickListener { _ ->
+
+            this@MainActivity.viewFrag = supportFragmentManager!!.findFragmentById(R.id.mainFragment).view
+            this@MainActivity.animation!!.start()
+        }
+
+        // Objeto de animação
+        animation = ValueAnimator.ofFloat(metricsMain!!.heightPixels.toFloat(), 0f)
+        animation!!.duration = 2000
+        animation!!.addUpdateListener { animation: ValueAnimator? ->
+            this@MainActivity.viewFrag!!.translationY = animation!!.animatedValue as Float
+        }
+
     }
 
     private fun createUserEmail(email: String, password: String ): Boolean{
@@ -132,11 +173,9 @@ class MainActivity : AppCompatActivity() {
 
         this@MainActivity.mAuth?.signInWithEmailAndPassword(email, password)?.addOnCompleteListener(this@MainActivity) { task ->
             if (task.isSuccessful) {
-                // Sign in success, update UI with the signed-in user's information
                 Log.d("UserLogin", "signInWithEmail:success")
                 success = true
             } else {
-                // If sign in fails, display a message to the user.
                 Log.w("UserLogin", "signInWithEmail:failure", task.exception)
                 Toast.makeText(this@MainActivity, "Authentication failed.", Toast.LENGTH_SHORT).show()
                 success = false
@@ -152,12 +191,9 @@ class MainActivity : AppCompatActivity() {
         val credential = FacebookAuthProvider.getCredential(token.token)
         this@MainActivity.mAuth?.signInWithCredential(credential)?.addOnCompleteListener(this@MainActivity) { task ->
             if (task.isSuccessful) {
-                // Sign in success, update UI with the signed-in user's information
-                Log.d("FacebookLogin", "signInWithEmail:success")
                 Toast.makeText(this@MainActivity, "Auth Firebase Facebook", Toast.LENGTH_SHORT).show()
                 val user: FirebaseUser = mAuth!!.currentUser!!
             } else {
-                // If sign in fails, display a message to the user.
                 Log.d("FacebookLogin", "signInWithEmail:failure")
                 Toast.makeText(this@MainActivity, "Authentication Facebook FireBase failed.",
                         Toast.LENGTH_SHORT).show()
@@ -197,5 +233,12 @@ class MainActivity : AppCompatActivity() {
         }
 
      }
+
+    fun isNullOrEmpty(str: String?): Boolean{
+        if(str != null && !str.isEmpty()){
+            return false
+        }
+        return true
+    }
 
 }
