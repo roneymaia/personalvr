@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.ContentFrameLayout
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <fragment
-        android:id="@+id/mainFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        class="net.sytes.roneymaia.personalvr.fragments.FragmentCadastro" />
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/mainConstraint"
@@ -27,7 +21,7 @@
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textPersonName"
+            android:inputType="textEmailAddress"
             app:layout_constraintBottom_toTopOf="@+id/txtSenha"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintHorizontal_bias="0.0"
@@ -155,4 +149,11 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
-</android.support.v7.widget.ContentFrameLayout>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="net.sytes.roneymaia.personalvr.fragments.FragmentCadastro" />
+
+</FrameLayout>

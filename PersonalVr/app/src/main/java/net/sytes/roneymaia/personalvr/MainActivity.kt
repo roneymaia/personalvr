@@ -136,13 +136,12 @@ class MainActivity : AppCompatActivity() {
         btnCadastrar!!.setOnClickListener { _ ->
 
             this@MainActivity.viewFrag = supportFragmentManager!!.findFragmentById(R.id.mainFragment).view
-            findViewById<View>(R.id.mainConstraint).visibility = View.GONE
             this@MainActivity.animation!!.start()
         }
 
         // Objeto de animação
         animation = ValueAnimator.ofFloat(metricsMain!!.heightPixels.toFloat(), 0f)
-        animation!!.duration = 2000
+        animation!!.duration = 1500
         animation!!.addUpdateListener { animation: ValueAnimator? ->
             this@MainActivity.viewFrag!!.translationY = animation!!.animatedValue as Float
         }
