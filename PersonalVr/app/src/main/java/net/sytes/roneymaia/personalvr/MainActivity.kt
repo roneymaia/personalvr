@@ -136,6 +136,7 @@ class MainActivity : AppCompatActivity() {
         btnCadastrar!!.setOnClickListener { _ ->
 
             this@MainActivity.viewFrag = supportFragmentManager!!.findFragmentById(R.id.mainFragment).view
+            findViewById<View>(R.id.mainConstraint).visibility = View.GONE
             this@MainActivity.animation!!.start()
         }
 
