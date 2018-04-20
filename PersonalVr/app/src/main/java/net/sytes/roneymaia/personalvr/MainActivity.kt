@@ -18,6 +18,7 @@ import android.graphics.BitmapFactory
 import android.util.DisplayMetrics
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.FacebookAuthProvider
 import com.facebook.AccessToken
@@ -45,9 +46,17 @@ class MainActivity : AppCompatActivity() {
     private var metricsMain: DisplayMetrics? = null
     private var viewFrag: View? = null
     private var btnCadastrar: Button? = null
+    private var animationArrow: ValueAnimator? = null
+    private var arrowFrag: ImageView? = null
 
     companion object {
         const val PVR_CODE = 1
+        fun isNullOrEmpty(str: String?): Boolean{
+            if(str != null && !str.isEmpty()){
+                return false
+            }
+            return true
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,6 +70,10 @@ class MainActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance() // obtem a instancia de autenticacao
 
+        if(mAuth!!.currentUser != null){
+            startActivity(Intent(this@MainActivity, PrincipalActivity::class.java))
+        }
+
         // ##### Firebase AUTH #####
 
         mCallbackManager = CallbackManager.Factory.create()
@@ -72,16 +85,14 @@ class MainActivity : AppCompatActivity() {
         // Callback registration
         loginButton!!.registerCallback(mCallbackManager, object : FacebookCallback<LoginResult> {
             override fun onSuccess(loginResult: LoginResult) {
-                Toast.makeText(applicationContext, "Success", Toast.LENGTH_SHORT).show()
                 signInFacebook(loginResult.accessToken)
             }
 
             override fun onCancel() {
-                Toast.makeText(applicationContext, "Cancel", Toast.LENGTH_SHORT).show()
             }
 
             override fun onError(exception: FacebookException) {
-                Toast.makeText(applicationContext, "Error", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Falha ao autenticar com o Facebook.", Toast.LENGTH_SHORT).show()
             }
         })
 
@@ -132,11 +143,22 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        // Obtem a view do fragmento
+        viewFrag = supportFragmentManager!!.findFragmentById(R.id.mainFragment).view
+        arrowFrag = viewFrag!!.findViewById(R.id.arrowFrag) as ImageView
+
+        //Animação da flecha
+        animationArrow = ValueAnimator.ofFloat( 0f, 180f)
+        animationArrow!!.duration = 1000
+        animationArrow!!.addUpdateListener { animation: ValueAnimator? ->
+            arrowFrag!!.rotation = animation!!.animatedValue as Float
+        }
+
         btnCadastrar = findViewById<View>(R.id.buttonCadastrar) as Button
         btnCadastrar!!.setOnClickListener { _ ->
 
-            this@MainActivity.viewFrag = supportFragmentManager!!.findFragmentById(R.id.mainFragment).view
             this@MainActivity.animation!!.start()
+
         }
 
         // Objeto de animação
@@ -144,27 +166,11 @@ class MainActivity : AppCompatActivity() {
         animation!!.duration = 1500
         animation!!.addUpdateListener { animation: ValueAnimator? ->
             this@MainActivity.viewFrag!!.translationY = animation!!.animatedValue as Float
-        }
-
-    }
-
-    private fun createUserEmail(email: String, password: String ): Boolean{
-
-        var success = false
-
-        this@MainActivity.mAuth?.createUserWithEmailAndPassword(email, password)?.addOnCompleteListener(this@MainActivity) { task ->
-            if (task.isSuccessful) {
-                // Sign in success, update UI with the signed-in user's information
-                Log.d("UserCreate", "createUserWithEmail:success")
-                success = true
-            } else {
-                // If sign in fails, display a message to the user.
-                Log.w("UserCreate", "createUserWithEmail:failure", task.exception)
-                Toast.makeText(this@MainActivity, "falha ao criar usuario", Toast.LENGTH_SHORT).show()
-                success = false
+            if((animation!!.animatedValue as Float) == 0f){
+                this@MainActivity.animationArrow!!.start()
             }
         }
-        return success
+
     }
 
     private fun signInEmailAndPassword(email: String, password: String) : Boolean{
@@ -173,11 +179,10 @@ class MainActivity : AppCompatActivity() {
 
         this@MainActivity.mAuth?.signInWithEmailAndPassword(email, password)?.addOnCompleteListener(this@MainActivity) { task ->
             if (task.isSuccessful) {
-                Log.d("UserLogin", "signInWithEmail:success")
                 success = true
+                startActivity(Intent(this@MainActivity, PrincipalActivity::class.java))
             } else {
-                Log.w("UserLogin", "signInWithEmail:failure", task.exception)
-                Toast.makeText(this@MainActivity, "Authentication failed.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Usuário ou senha incorretos.", Toast.LENGTH_SHORT).show()
                 success = false
             }
         }
@@ -191,11 +196,11 @@ class MainActivity : AppCompatActivity() {
         val credential = FacebookAuthProvider.getCredential(token.token)
         this@MainActivity.mAuth?.signInWithCredential(credential)?.addOnCompleteListener(this@MainActivity) { task ->
             if (task.isSuccessful) {
-                Toast.makeText(this@MainActivity, "Auth Firebase Facebook", Toast.LENGTH_SHORT).show()
                 val user: FirebaseUser = mAuth!!.currentUser!!
+                startActivity(Intent(this@MainActivity, PrincipalActivity::class.java))
             } else {
                 Log.d("FacebookLogin", "signInWithEmail:failure")
-                Toast.makeText(this@MainActivity, "Authentication Facebook FireBase failed.",
+                Toast.makeText(this@MainActivity, "Falha ao autenticar com o Facebook.",
                         Toast.LENGTH_SHORT).show()
             }
         }
@@ -207,11 +212,10 @@ class MainActivity : AppCompatActivity() {
         this@MainActivity.mAuth!!.signInWithCredential(credential)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(this@MainActivity, "Authentication Google Success.",
-                                Toast.LENGTH_SHORT).show()
                         val user: FirebaseUser? = mAuth!!.getCurrentUser()
+                        startActivity(Intent(this@MainActivity, PrincipalActivity::class.java))
                     } else {
-                        Toast.makeText(this@MainActivity, "Authentication Google Firebase failed.",
+                        Toast.makeText(this@MainActivity, "Falha ao autenticar com o Google.",
                                 Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -234,11 +238,6 @@ class MainActivity : AppCompatActivity() {
 
      }
 
-    fun isNullOrEmpty(str: String?): Boolean{
-        if(str != null && !str.isEmpty()){
-            return false
-        }
-        return true
-    }
+
 
 }

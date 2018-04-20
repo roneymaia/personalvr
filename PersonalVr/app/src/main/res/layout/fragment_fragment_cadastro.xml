@@ -15,9 +15,9 @@
         android:layout_marginBottom="198dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Cadastrar"
         android:background="@drawable/enter_button_radius_effect"
-        android:textColor="@color/white"
+        android:text="Cadastrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -28,14 +28,14 @@
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/ic_action_name"
+        android:background="@drawable/arrowup"
         android:scaleType="fitXY"
         android:src="#00ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtNameFrag"
+        android:id="@+id/edtEmailFrag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -45,7 +45,11 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/edtEmailFrag"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/edtSenhaFrag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +57,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <EditText
-        android:id="@+id/edtEmailFrag"
+        android:id="@+id/edtSenhaFrag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
@@ -62,6 +66,9 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnCadastroFrag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
