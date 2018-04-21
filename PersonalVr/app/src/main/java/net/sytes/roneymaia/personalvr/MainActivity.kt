@@ -15,6 +15,8 @@ import com.facebook.FacebookCallback
 import com.facebook.login.widget.LoginButton
 import android.content.Intent
 import android.graphics.BitmapFactory
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.DisplayMetrics
 import android.widget.Button
 import android.widget.EditText
@@ -48,6 +50,7 @@ class MainActivity : AppCompatActivity() {
     private var btnCadastrar: Button? = null
     private var animationArrow: ValueAnimator? = null
     private var arrowFrag: ImageView? = null
+    private var nIt: Int? = 0
 
     companion object {
         const val PVR_CODE = 1
@@ -65,7 +68,6 @@ class MainActivity : AppCompatActivity() {
 
         metricsMain = resources.displayMetrics
 
-        SingletonControlCanvas.bitmapCv = BitmapFactory.decodeResource(resources, R.drawable.googleicon)
         viewCanvas = findViewById<CustomViewCanvas>(R.id.viewCanvas) // canvas view customizada
 
         mAuth = FirebaseAuth.getInstance() // obtem a instancia de autenticacao
@@ -129,7 +131,72 @@ class MainActivity : AppCompatActivity() {
         }
 
         txtEmail = findViewById<View>(R.id.txtEmail) as EditText
+        txtEmail!!.addTextChangedListener(object : TextWatcher{
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+
+                if(this@MainActivity.nIt!! >= 163){
+                  this@MainActivity.nIt = 0
+                }else{
+                    val nIni = this@MainActivity.nIt!!
+                    var nFim: Int = this@MainActivity.nIt!! + 4
+
+                    if(nFim >= 163){
+                        nFim = 163
+                    }
+                    for (number in nIni..nFim){
+                        for (numberloop in 0..10){
+                            SingletonControlCanvas.imageNumber = number
+                            this@MainActivity.viewCanvas!!.invalidate()
+                        }
+
+                    }
+                    this@MainActivity.nIt = nFim
+                }
+
+
+            }
+
+        })
         txtSenha = findViewById<View>(R.id.txtSenha) as EditText
+        txtSenha!!.addTextChangedListener(object : TextWatcher{
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+
+                if(this@MainActivity.nIt!! >= 163){
+                    this@MainActivity.nIt = 0
+                }else{
+                    val nIni = this@MainActivity.nIt!!
+                    var nFim: Int = this@MainActivity.nIt!! + 4
+
+                    if(nFim >= 163){
+                        nFim = 163
+                    }
+                    for (number in nIni..nFim){
+                        SingletonControlCanvas.imageNumber = number
+                        this@MainActivity.viewCanvas!!.invalidate()
+                    }
+                    this@MainActivity.nIt = nFim
+                }
+
+
+            }
+
+        })
 
         // Evento de click no botão de entrar
         btnEntrar = findViewById<View>(R.id.btnEntrar) as Button
